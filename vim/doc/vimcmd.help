@@ -1,0 +1,2 @@
+:%retab == You can replace all the tabs with whitespace in the entire file with
+:%le == Remove all leading whitespace and left align everything
