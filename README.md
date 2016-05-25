@@ -20,6 +20,16 @@ ln -s ~/.dotfiles/bashrc ~/.bashrc
 
 ln -s ~/.dotfiles/bash_profile ~/.bash_profile
 
+Install Vundle.vim
+-------------------
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Install the rest of the Plugins
+--------------------------------
+
+$ vim
+:PluginInstall
 
 Pushing to github.
 ------------------
