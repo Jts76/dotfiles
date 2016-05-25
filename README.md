@@ -29,6 +29,7 @@ Install the rest of the Plugins
 --------------------------------
 
 $ vim
+
 :PluginInstall
 
 Pushing to github.
