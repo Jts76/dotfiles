@@ -33,10 +33,13 @@ hi Error      guifg=#FFFFFF guibg=#990000
 hi MatchParen guifg=NONE    guibg=#131313
 hi Title      guifg=#E6E1DC
 
-hi Comment    guifg=#BC9357 guibg=NONE     gui=italic
+hi Comment    guifg=#D4C25F guibg=NONE     gui=italic
+"hi Comment    guifg=#BC9357 guibg=NONE     gui=italic
+
 hi! link Todo Comment
 
-hi String     guifg=#A5C160
+hi String     guifg=#6D9CBD
+
 hi! link Number String
 hi! link rubyStringDelimiter String
 
