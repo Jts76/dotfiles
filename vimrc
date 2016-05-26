@@ -101,18 +101,18 @@ autocmd FileType vim              let b:comment_leader = '" '
 
 ":set t_Co=256
 
-colorscheme freya      "change to taste. try `desert' or `evening'
+colorscheme railscasts   "change to taste. try `desert' or `evening'
 
 " Enable Syntax Highlighting
 if !exists("g:syntax_on")
         syntax enable
-    endif
+endif
 
 " Turn row numbers on
 set number
 
 " Color the Line Numbers
-highlight LineNr ctermbg=0
+"highlight LineNr ctermbg=0
 
 " Color the colorcolumn lightgrey
 hi ColorColumn ctermbg=lightgrey
@@ -123,13 +123,10 @@ set      cursorline
 " use a different background color after column 79
 execute  "set colorcolumn=" . join(range(80,400), ',')
 
-" highlight Normal ctermfg=grey ctermbg=black
-"set background=dark
 
 " Turn on the ruler (Row / Column numbers in the status bar)
 set ruler
 
-" highlight Normal ctermbg=0
 
 set wrap                "wrap long lines
 set scrolloff=3         "keep three lines visible above and below
@@ -165,7 +162,6 @@ set softtabstop=4       "Number of spaces that a <Tab> counts for while editing
 set shiftwidth=4        "Number of spaces to use for each step of (auto)indent
 set expandtab           "In Insert mode: Use the appropriate number of spaces to insert a
                         "<Tab>.
-set nu                  "Number each line
 set window=0
 " }
 "vim: set ft=vim :
