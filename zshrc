@@ -1,11 +1,15 @@
-# Path to your oh-my-zsh installation.
+# ZSH Configuration File
+# Maintainer: Jonathan T Smith <Jtsmith [DOT] tms [AT] gmail [DOT] com
+# Last Changed: May25, 2016
+# =============================================================================
+
 export ZSH=/Users/Jts/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="nebirhos"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -30,7 +34,7 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -49,11 +53,16 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
 plugins=(git)
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/Users/Jts/anaconda2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# added by Anaconda2 4.0.0 installer
+export PATH="/Users/Jts/anaconda2/bin:$PATH"
+
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -85,36 +94,27 @@ source $ZSH/oh-my-zsh.sh
 
 
 # =============================================================================
-# Copied from ~/.bashrc file   
+# Copied from ~/.bashrc file
 # =============================================================================
 
 # =============================================================================
-# Setting PATH for PYTHON 2.7
-# =============================================================================
-
-# added by Anaconda2 4.0.0 installer
-export PATH="/Users/Jts/anaconda2/bin:$PATH"
-
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# ==========
 # Set Color
-# ==========
+# =============================================================================
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxcxegedabagaced
+
+# =============================================================================
+# Alias Configurations
+# =============================================================================
+
+# Load a list of files into buffers in vim
+#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 
 # Search duckduckgo.com
 function duck() { open /Applications/Safari.app/ "http://www.duckduckgo.com/search?q= $1"; }
 
 # Open vim Quick Reference in Preview
 alias vimh='open /Users/Jts/Box\ Sync/Dev/**Learning\ Center**/Books/Vim/vimqrc.pdf'
-
-# =====================
-# Alias Configurations
-# =====================
-
-# Load a list of files into buffers in vim
-#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 
 # Run vim 7.4
 alias vim='/usr/local/bin/vim'
@@ -146,9 +146,9 @@ alias lbd='open -a LaunchBar'
 # GeekNote Aliases
 alias gn="python ~/Git/geeknote/geeknote.py"
 
-# ==================================
+# =============================================================================
 # Directory Aliases
-# ==================================
+# =============================================================================
 
 # Change to Dev Clients Projects Directory
 alias pcl='cd /Users/Jts/Box\ Sync/Dev/**Projects**/Clients'
@@ -164,5 +164,10 @@ alias pyl='cd /Users/Jts/Box\ Sync/Dev/**Projects**/Python'
 
 # Change working directory to Dev Learning Center directory
 alias devl='cd /Users/Jts/Box\ Sync/Dev/**Learning\ Center**'
+
+
+# =============================================================================
+# Test Configs
+# =============================================================================
 
 
