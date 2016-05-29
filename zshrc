@@ -10,7 +10,7 @@ export ZSH=/Users/Jts/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="daveverwer"
+ZSH_THEME="honukai"
 #ZSH_THEME="honukai"
 
 #Old theme = nebirhos
