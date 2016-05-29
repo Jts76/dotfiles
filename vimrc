@@ -42,6 +42,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/csapprox'
+Plugin 'ajh17/VimCompletesMe'
 
 " =================================
 " Vim Side Search

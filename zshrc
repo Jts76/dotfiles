@@ -103,8 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # =============================================================================
 # Set Color
 # =============================================================================
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxcxegedabagaced
+#export CLICOLOR=1
+#export LSCOLORS=ExFxCxDxcxegedabagaced
 
 # =============================================================================
 # Alias Configurations
