@@ -1,13 +1,13 @@
 " Vim Configuration File
 " Maintainer: Jonathan T Smith <Jtsmith [DOT] tms [AT] gmail [DOT] com
 " Last Changed: May25, 2016
-" =========================================================================== "
+" =============================================================================
 
-" =========================================================================== "
+" =============================================================================
 " Below borrowed from:
 " Bidit Mazumder <Bidit [DOT] Mazumder [AT] ttualumni [DOT] org>
 " http://biditm.users.sourceforge.net/vim/_vimrc
-" =========================================================================== "
+" =============================================================================
 " To start Vim without loading your ".vimrc" or ".gvimrc" file, use
 " "vim -u NONE -U NONE"
 " This will revert Vim to Vi compatible mode, which disables many useful
@@ -21,11 +21,11 @@
 " vim -u NONE -U NONE -N --cmd ':filetype plugin on'".
 
 " END BORROWED
-" =========================================================================== "
+" =============================================================================
 
-" =========================================================================== "
-" Vundle Plugin Config
-" =========================================================================== "
+" =============================================================================
+" Vundle & Plugin Config
+" =============================================================================
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -41,16 +41,43 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'godlygeek/csapprox'
 
-" All of your Plugins must be added before the following line
+" =================================
+" Vim Side Search
+" =================================
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
+Plugin 'ddrscott/vim-side-search'
+
+" How should we execute the search?
+" --heading and --stats are required!
+
+let g:side_search_prg = 'ag --word-regexp'
+  \. " --ignore='*.js.map'"
+  \. " --heading --stats -B 1 -A 4"
+
+" Can use `vnew` or `new`
+let g:side_search_splitter = 'vnew'
+
+" I like 40% splits, change it if you don't
+let g:side_search_split_pct = 0.4
+
+" Mappings ========================
+
+"n/N         - Cursor to next/prev result
+"<C-n>/<C-p> - Open next/prev in largest window
+"<CR>        - Open location at cursor in largest window
+"<C-w><CR>   - Open and jump to window
+"qf          - :grep! to Quickfix
+
+" =============END=================
+
+" =================================
+" UltiSnips & Vim-Snippets
+" =================================
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
@@ -61,6 +88,15 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Set :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" =============END=================
+
+" All of your Plugins must be added before the following line
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+" filetype plugin on
 
 " Brief help
 " :PluginList       - lists configured plugins
@@ -73,15 +109,16 @@ let g:UltiSnipsEditSplit="vertical"
 " See :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" =========================================================================== "
+" =============================================================================
 " Settings
-" =========================================================================== "
+" =============================================================================
 
 set nocp                "No Compatibility
 set modelines=0         "Disables modelines
 filetype on             "Turn filetype detection on
 let python_highlight_all = 1
 " set mouse=a
+
 " Do not use errorbells
 set      noerrorbells
 
@@ -95,13 +132,13 @@ autocmd FileType tex              let b:comment_leader = '% '
 autocmd FileType mail             let b:comment_leader = '> '
 autocmd FileType vim              let b:comment_leader = '" '
 
-" =========================================================================== "
+" =============================================================================
 " Display Options
-" =========================================================================== "
+" =============================================================================
 
 ":set t_Co=256
 
-colorscheme railscasts   "change to taste. try `desert' or `evening'
+colorscheme grimmcasts   "change to taste. try `desert' or `evening'
 
 " Enable Syntax Highlighting
 if !exists("g:syntax_on")
@@ -138,9 +175,9 @@ set cc=80               "Display a color column at column 80.
                         "Docstrings and comments should be limited to
                         "a width of 72.
 
-" =========================================================================== "
+" =============================================================================
 " Search Options
-" =========================================================================== "
+" =============================================================================
 
 set hidden
 set incsearch           "search as you type
@@ -151,33 +188,38 @@ set ignorecase          "ignore case
 " (Starts vim in INSERT mode for some reason)
 "nnoremap <esc> :noh<return><esc>>
 
-" =========================================================================== "
+" =============================================================================
 " Indentation Options
-" =========================================================================== "
+" =============================================================================
 
 set backspace=2
-set smartindent         "Do smart autoindenting when starting a new line.
+"set smartindent         "Do smart autoindenting when starting a new line.
 set tabstop=4           "Number of spaces that a <Tab> counts for
 set softtabstop=4       "Number of spaces that a <Tab> counts for while editing
 set shiftwidth=4        "Number of spaces to use for each step of (auto)indent
-set expandtab           "In Insert mode: Use the appropriate number of spaces to insert a
-                        "<Tab>.
+set expandtab           "In Insert mode: Use the appropriate number of spaces
+                        "to insert a <Tab>.
 set window=0
 " }
 "vim: set ft=vim :
 
-" =========================================================================== "
-" Map (Macro) Commands
-" =========================================================================== "
+" =============================================================================
+" Map (Macro) and Custom Commands
+" =============================================================================
+" Type :C to clear search highlighting from previous searh.
+:command C let @/=""
+
+" Press <spacebar> then type a character to insert it at cursor.
+noremap <silent> <space> :exe "normal i".nr2char(getchar())<CR>
 
 "noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape
 "(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 "noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape
 "(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
-" =========================================================================== "
+" =============================================================================
 " Rule Testing
-" =========================================================================== "
+" =============================================================================
 
 
 " highlight the column the cursor is on

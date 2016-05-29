@@ -10,7 +10,8 @@ export ZSH=/Users/Jts/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="honukai"
+ZSH_THEME="daveverwer"
+#ZSH_THEME="honukai"
 
 #Old theme = nebirhos
 # Uncomment the following line to use case-sensitive completion.
@@ -112,6 +113,20 @@ export LSCOLORS=ExFxCxDxcxegedabagaced
 # Load a list of files into buffers in vim
 #alias vim='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 
+# =================================
+# Resize the terminal window
+# =================================
+
+# Small
+alias ts='echo -ne "\e[8;20;65t"'
+
+# Medium
+alias tm='echo -ne "\e[8;40;90t"'
+
+# Default
+alias td='echo -ne "\e[8;45;145t"'
+
+
 # Search duckduckgo.com
 function duck() { open /Applications/Safari.app/ "http://www.duckduckgo.com/search?q= $1"; }
 
@@ -146,7 +161,7 @@ alias sshc='ssh jts@shellmix.com'
 alias lbd='open -a LaunchBar'
 
 # GeekNote Aliases
-alias gn="python ~/Git/geeknote/geeknote.py"
+alias gn="python ~/Git/geeknote/geeknote/geeknote.py"
 
 # =============================================================================
 # Directory Aliases

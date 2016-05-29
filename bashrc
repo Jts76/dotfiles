@@ -54,7 +54,7 @@ alias sshc='ssh jts@shellmix.com'
 alias lbd='open -a LaunchBar'
 
 # GeekNote Aliases
-alias gn="python ~/Git/geeknote/geeknote.py"
+alias gn="python ~/Git/geeknote/geeknote/geeknote.py"
 
 # ==================================
 # Directory Aliases
