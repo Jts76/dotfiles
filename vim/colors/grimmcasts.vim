@@ -79,7 +79,7 @@ hi Error                     guifg=#FFFFFF guibg=#990000
 hi WarningMsg                guifg=#800000 guibg=NONE 
 hi Identifier                guifg=#af5f5f gui=NONE 
 hi Keyword                   guifg=#af5f00 gui=NONE 
-hi Number                    guifg=#87af5f 
+hi Number                    guifg=#0089C2 
 hi Statement                 guifg=#af5f00 gui=NONE 
 hi String                    guifg=#87af5f 
 hi Title                     guifg=#FFFFFF 

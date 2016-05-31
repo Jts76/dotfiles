@@ -1,0 +1,93 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.019  000.019: --- VIM STARTING ---
+000.138  000.119: Allocated generic buffers
+003.187  003.049: locale set
+003.200  000.013: clipboard setup
+003.219  000.019: window checked
+004.390  001.171: inits 1
+004.401  000.011: parsing arguments
+004.402  000.001: expanding arguments
+009.620  005.218: shell init
+010.122  000.502: Termcap init
+010.147  000.025: inits 2
+010.382  000.235: init highlight
+011.304  000.098  000.098: sourcing /usr/local/share/vim/vim74/ftoff.vim
+026.462  000.437  000.437: sourcing /Users/Jts/.vim/bundle/Vundle.vim/autoload/vundle.vim
+027.097  000.399  000.399: sourcing /Users/Jts/.vim/bundle/Vundle.vim/autoload/vundle/config.vim
+086.753  000.070  000.070: sourcing /Users/Jts/.vim/bundle/vim-side-search/ftdetect/ag.vim
+087.065  000.085  000.085: sourcing /Users/Jts/.vim/bundle/ultisnips/ftdetect/snippets.vim
+087.222  000.078  000.078: sourcing /Users/Jts/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
+087.687  053.643  053.410: sourcing /usr/local/share/vim/vim74/filetype.vim
+088.077  000.093  000.093: sourcing /usr/local/share/vim/vim74/ftplugin.vim
+088.487  000.072  000.072: sourcing /usr/local/share/vim/vim74/indent.vim
+088.997  000.027  000.027: sourcing /usr/local/share/vim/vim74/filetype.vim
+090.234  000.930  000.930: sourcing /Users/Jts/.vim/colors/grimmcasts.vim
+091.691  000.379  000.379: sourcing /usr/local/share/vim/vim74/syntax/syncolor.vim
+092.508  000.384  000.384: sourcing /usr/local/share/vim/vim74/syntax/syncolor.vim
+094.676  003.789  003.026: sourcing /Users/Jts/.vim/colors/grimmcasts.vim
+094.888  004.172  000.383: sourcing /usr/local/share/vim/vim74/syntax/synload.vim
+094.956  004.489  000.317: sourcing /usr/local/share/vim/vim74/syntax/syntax.vim
+095.641  084.788  024.600: sourcing $HOME/.vimrc
+095.656  000.486: sourcing vimrc file(s)
+101.097  000.247  000.247: sourcing /Users/Jts/.vim/bundle/nerdtree/autoload/nerdtree.vim
+105.212  001.194  001.194: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/path.vim
+105.640  000.250  000.250: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim
+105.946  000.168  000.168: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim
+106.299  000.217  000.217: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/key_map.vim
+106.917  000.485  000.485: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim
+107.635  000.578  000.578: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim
+109.045  001.273  001.273: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim
+110.824  001.619  001.619: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/opener.vim
+111.773  000.789  000.789: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/creator.vim
+112.132  000.179  000.179: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim
+112.779  000.295  000.295: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim
+114.244  001.325  001.325: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/ui.vim
+114.672  000.069  000.069: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/event.vim
+115.001  000.105  000.105: sourcing /Users/Jts/.vim/bundle/nerdtree/lib/nerdtree/notifier.vim
+118.159  002.843  002.843: sourcing /Users/Jts/.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim
+191.001  000.217  000.217: sourcing /Users/Jts/.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim
+192.911  001.787  001.787: sourcing /Users/Jts/.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim
+193.583  097.525  083.885: sourcing /Users/Jts/.vim/bundle/nerdtree/plugin/NERD_tree.vim
+199.130  004.950  004.950: sourcing /Users/Jts/.vim/bundle/csapprox/plugin/CSApprox.vim
+199.844  000.343  000.343: sourcing /Users/Jts/.vim/bundle/VimCompletesMe/plugin/VimCompletesMe.vim
+200.399  000.291  000.291: sourcing /Users/Jts/.vim/bundle/vim-side-search/plugin/side-search.vim
+201.414  000.179  000.179: sourcing /Users/Jts/.vim/bundle/ultisnips/autoload/UltiSnips/map_keys.vim
+201.581  000.941  000.762: sourcing /Users/Jts/.vim/bundle/ultisnips/plugin/UltiSnips.vim
+201.979  000.088  000.088: sourcing /Users/Jts/.vim/bundle/vim-snippets/plugin/vimsnippets.vim
+203.149  000.209  000.209: sourcing /usr/local/share/vim/vim74/plugin/getscriptPlugin.vim
+203.739  000.501  000.501: sourcing /usr/local/share/vim/vim74/plugin/gzip.vim
+204.373  000.540  000.540: sourcing /usr/local/share/vim/vim74/plugin/logiPat.vim
+204.504  000.042  000.042: sourcing /usr/local/share/vim/vim74/plugin/manpager.vim
+204.953  000.367  000.367: sourcing /usr/local/share/vim/vim74/plugin/matchparen.vim
+207.558  002.518  002.518: sourcing /usr/local/share/vim/vim74/plugin/netrwPlugin.vim
+207.889  000.066  000.066: sourcing /usr/local/share/vim/vim74/plugin/rrhelper.vim
+208.068  000.080  000.080: sourcing /usr/local/share/vim/vim74/plugin/spellfile.vim
+209.064  000.900  000.900: sourcing /usr/local/share/vim/vim74/plugin/tarPlugin.vim
+209.674  000.429  000.429: sourcing /usr/local/share/vim/vim74/plugin/tohtml.vim
+210.634  000.837  000.837: sourcing /usr/local/share/vim/vim74/plugin/vimballPlugin.vim
+211.733  000.950  000.950: sourcing /usr/local/share/vim/vim74/plugin/zipPlugin.vim
+269.951  000.378  000.378: sourcing /Users/Jts/.vim/bundle/csapprox/autoload/csapprox/common.vim
+270.320  000.135  000.135: sourcing /Users/Jts/.vim/bundle/csapprox/autoload/csapprox/per_component.vim
+272.811  000.074  000.074: sourcing /usr/local/share/vim/vim74/syntax/syncolor.vim
+408.920  000.071  000.071: sourcing /usr/local/share/vim/vim74/syntax/syncolor.vim
+409.224  196.890  196.232: sourcing /Users/Jts/.vim/bundle/csapprox/after/plugin/CSApprox.vim
+409.795  000.211  000.211: sourcing /Users/Jts/.vim/bundle/ultisnips/after/plugin/UltiSnips_after.vim
+409.838  005.504: loading plugins
+410.755  000.917: loading packages
+410.776  000.021: inits 3
+411.175  000.399: reading viminfo
+411.216  000.041: setting raw mode
+411.337  000.121: start termcap
+411.439  000.102: clearing screen
+413.754  002.315: opening buffers
+414.536  000.782: BufEnter autocommands
+414.541  000.005: editing files in windows
+415.371  000.830: VimEnter autocommands
+415.470  000.099: before starting main loop
+437.947  022.477: first screen update
+437.951  000.004: --- VIM STARTED ---
