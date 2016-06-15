@@ -43,6 +43,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/csapprox'
 Plugin 'ajh17/VimCompletesMe'
+Plugin 'davidhalter/jedi-vim'
 
 " =================================
 " Vim Side Search
@@ -207,12 +208,16 @@ set window=0
 " =============================================================================
 " Map (Macro) and Custom Commands
 " =============================================================================
+let mapleader=","
+nnoremap / /\v
 " Type :C to clear search highlighting from previous searh.
 :command C let @/=""
 
 " Press <spacebar> then type a character to insert it at cursor.
 noremap <silent> <space> :exe "normal i".nr2char(getchar())<CR>
 
+" Open current buffer in a new tab
+:noremap tt :tab split<CR>
 "noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape
 "(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 "noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape
