@@ -30,7 +30,7 @@ ZSH_THEME="honukai"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -60,14 +60,6 @@ plugins=(git brew brew-cask osx)
 
 # User configuration
 
-# added by Anaconda2 4.0.0 installer
-export PATH="/Users/Jts/anaconda2/bin:$PATH"
-
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -94,6 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+#[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 # =============================================================================
 # Copied from ~/.bashrc file
@@ -110,7 +104,26 @@ source $ZSH/oh-my-zsh.sh
 # Test Configs
 # =============================================================================
 
+# added by Anaconda3 4.0.0 installer
+export PATH="/Users/Jts/anaconda3/bin:$PATH"
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# export MANPATH="/usr/local/man:$MANPATH"
+
+#setup terminal tab title
+#function title {
+#    if [ "$1" ]
+#    then
+#        unset PROMPT_COMMAND
+#        echo -ne "\033]0;${*}\007"
+#    else
+#        export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
+#    fi
+#}
+#title
+# =============================================================================
+# Sourcing
+# =============================================================================
+
+source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/zsh/aliases.zsh
 
-# Only load Liquid Prompt in interactive shells, not from a script or from scp
-#[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt

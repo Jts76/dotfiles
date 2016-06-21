@@ -5,6 +5,20 @@
 # Load a list of files into buffers in vim
 #alias vim='/Applications/MacVim.app/Contents/MacOS/Vim --remote-silent'
 
+# Add a tab title ex. "title python 2"
+
+#setup terminal tab title
+#function title {
+#    if [ "$1" ]
+#    then
+#        unset PROMPT_COMMAND
+#        echo -ne "\033]0;${*}\007"
+#    else
+#        export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
+#    fi
+#}
+#title
+
 # =================================
 # Resize the terminal window
 # =================================
@@ -31,11 +45,11 @@ alias vim='/usr/local/bin/vim'
 # Run iPython
 alias py='ipython'
 
-# Run Python 3.5 Environment
-alias py3='source activate py3'
+# Run Python 2.7 Environment
+alias py2='tabset -t Python2.7 -c py2 && source activate py2'
 
-# Deactivate Python 3.5 Environment
- alias nopy3='source deactivate'
+# Deactivate Python 2.7 Environment
+alias nopy='tabset -t $PWD -c nopy && source deactivate'
 
 # Add execute permission to a file
 alias exe='sudo chmod +x'
